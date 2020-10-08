@@ -1,0 +1,22 @@
+<!--pages/site/site.wxml-->
+<view class='h1'>
+	健身场地
+</view>
+<!-- 一行一张图 -->
+<view class='flex'>
+	<view class='row'>
+		<image src='/images/s1.jpg' mode='widthFix' />
+	</view>
+	<view class='row'>
+		<image src='/images/s2.jpg' mode='widthFix' />
+	</view>
+	<view class='row'>
+		<image src='/images/s3.jpg' mode='widthFix' />
+	</view>
+  	<view class='row'>
+		<image src='/images/s4.jpg' mode='widthFix' />
+	</view>
+  	<view class='row'>
+		<image src='/images/s5.jpg' mode='widthFix' />
+	</view>
+</view>

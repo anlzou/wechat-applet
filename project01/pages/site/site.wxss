@@ -1,0 +1,5 @@
+/* pages/site/site.wxss */
+.row {
+  width: 710rpx;
+  margin: 20rpx;
+}

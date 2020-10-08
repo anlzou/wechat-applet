@@ -1,0 +1,35 @@
+/* pages/reserve/reserve.wxss */
+.h1 {
+  font-weight: bold;
+  border-bottom: dashed 1px #ccc;
+  color: #333;
+  margin: 20rpx;
+  padding-bottom: 10rpx;
+}
+
+.flex {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 100%;
+  text-align: left;
+  margin: 20rpx;
+}
+
+input {
+  width: 680rpx;
+  border: 1rpx solid #999;
+  margin: 10rpx 0;
+  border-radius: 8rpx;
+  padding: 10rpx;
+  color: #666;
+}
+
+.button {
+  width: 60%;
+  background-color: #300040;
+  color: white;
+}

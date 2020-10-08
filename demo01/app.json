@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/icon/icon",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/anlzou/anlzou"
+  ],
+  "window":{
+    "backgroundTextStyle":"black",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#aabbcc"
+  },
+  "tabBar": {
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "home",
+      "iconPath": "images/deer-freebie-icon.png",
+      "selectedIconPath": "images/deer-smile-freebie-icon.png"
+    },{
+      "pagePath":"pages/logs/logs",
+      "text":"test-1",
+      "iconPath":"images/snowman-freebie-icon.png",
+      "selectedIconPath":"images/snowman-smile-freebie-icon.png"
+    },{
+      "pagePath":"pages/anlzou/anlzou",
+      "text":"test-2",
+      "iconPath":"images/santa-claus-freebie-icon.png",
+      "selectedIconPath":"images/santa-freebie-icon.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

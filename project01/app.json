@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/coach/coach",
+    "pages/course/course",
+    "pages/site/site",
+    "pages/reserve/reserve",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#69008c",
+    "navigationBarTitleText": "高能健身馆",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+    {
+    "pagePath": "pages/index/index",
+    "text": "首页",
+    "iconPath": "images/home.png",
+    "selectedIconPath": "images/home-selected.png"
+    },
+    {
+    "pagePath": "pages/reserve/reserve",
+    "text": "预约",
+    "iconPath": "images/search.png",
+    "selectedIconPath": "images/search-selected.png"
+    }]
+  },
+  "position": "bottom",
+  "color": "#000000",
+  "selectedColor": "#0066ff",
+  "backgroundColor": "#eeeeee",
+  "borderStyle": "black",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

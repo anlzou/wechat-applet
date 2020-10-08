@@ -1,0 +1,24 @@
+/* pages/course/course.wxss */
+.h1 {
+  font-weight: bold;
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx dashed #ccc;
+}
+
+.flex {
+  /* 弹性盒子 */
+  display: flex;
+  /* 让盒子在必要的时候拆分多行 */
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 335rpx;
+  margin: 20rpx;
+}
+
+.row image {
+  /* 强行 100%显示图片 */
+  width: 100%;
+}

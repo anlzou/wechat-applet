@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- <swiper>
+  <swiper-item>
+    <image class="img1" src="../../images/p1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="img1" src="../../images/p1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="img1" src="../../images/p1.jpg"></image>
+  </swiper-item>
+</swiper> -->
+<!-- 视图容器组件 swiper
+  2.indicator-dots：是否现显示面板指示灯，默认 false；
+  3.autoplay：是否自动切换，默认为 false；
+  4.current：当前所在页面的 index，默认为 0；
+  5.interval：自动切换时间间隔，默认为 5000；
+  6.duration：自动切换时的动画市场，默认 500；
+  7.circular：是否采用无缝衔接滑动，默认 false；
+  8.vertical：是否采用纵向的滑动方向，默认 false；
+  9.previous-margin: 前边距，可用于露出前一项的一小部分，接收 px 和 rpx 值，
+  默认’0px’；
+  10.next-margin：后边据，同上；
+  11.display-multiple-items：同时显示的滑块数量，默认值为１；
+  12.current-item-id：当前坐在滑动块的 item-id，不能与 current 同时指定；
+  13.bindchange：是一个事件，当滑动时触发自定义事件；
+  14.bindanimationfinish：是一个事件，当滑动的动画结束后，触发自定义事件。
+ -->
+<swiper indicator-dots="{{indicatorDots}}"
+        autoplay="true"
+        interval="2500"
+        circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="img">
+    <swiper-item tiem-id="{{index}}">
+      <image src="{{item}}" class="img1"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 
+  使用catchtap:取消冒泡
+  使用bindtap:可以冒泡
+ -->
+<view class="index_view1" bindtap="myViewClick">
+  <text class="index_text1" catchtap="myTextClick">{{content}}</text>
+</view>
+
+<view hidden="hidden">
+  <text>{{hiddenContent}}</text>
+</view>
+
+<view >
+  <text>1+2 = {{num1+num2}}</text>
+</view>
+
+<view>
+  <text>name:{{user.name}}--------age:{{user.age}}</text>
+</view>
+
+<view>
+  <text bindtap="myClick">点击我，计数为{{count}}</text>
+</view>
+
+<view wx:if="{{flag}}">
+  <text>{{user.name}}</text>
+</view>
+
+<block wx:if="{{flag}}">
+  <view class="content">第一组</view>
+  <view class="content">第二组</view>
+</block>
+
+<view wx:for="{{datas.users}}" wx:key="userList">
+  <text>{{index}} - {{item.name}} - {{item.age}}</text>
+</view>

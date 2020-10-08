@@ -1,0 +1,7 @@
+<!--pages/icon/icon.wxml-->
+<progress percent="20" 
+          show-info="true"
+          border-radius="8" 
+          active="true"
+          active-mode="backwards">
+</progress>

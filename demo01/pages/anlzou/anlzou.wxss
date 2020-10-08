@@ -1,0 +1,16 @@
+/* pages/anlzou/anlzou.wxss */
+
+page{
+  background-image: url("https://design.maliquankai.com/images/illustration/oldbook.jpg");
+}
+
+/* 滚动scroll-view */
+scroll-view {
+  background-color: #eee;
+  height: 800rpx;
+}
+
+.view-item {
+  height: 250rpx;
+  width: 150%;
+}

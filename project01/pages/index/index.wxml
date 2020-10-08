@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<!--首页轮播效果，三张图片展示
+indicator-dots ： 是否显示面板指示点
+autoplay ： 是否自动播放
+interval ： 自动切换时间间隔，默认 5000 毫秒
+duration ： 滑动动画时长
+circular ： 是否采用衔接滑动
+imgUrls ： 轮播图的 URL 数组
+-->
+<!-- swiper -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+	<swiper-item wx:for="{{imgUrls}}" wx:key="index">
+		<image src="{{item}}" class="slide-image" />
+	</swiper-item>
+</swiper>
+
+<!-- map -->
+<!-- 联系 -->
+<view class='h1'>
+	您的健身馆
+</view>
+<view class='text'>
+	<icon type='info' size='12' color='#666' /> 营业时间：9:00 - 21:00
+</view>
+<view class='text'>
+	<icon type='search' size='12' color='#666' /> 上海市陆家嘴东方广场
+	107 号 505 室
+</view>
+<!-- 三组按钮 -->
+<view style="display: flex;">
+	<view class='row'>
+		<navigator url='/pages/course/course' open-type="navigate">
+			<button size='mini' class='button'>课程</button>
+		</navigator>
+	</view>
+	<view class='row'>
+		<navigator url='/pages/coach/coach' open-type="navigate">
+			<button size='mini' class='button'>教练</button>
+		</navigator>
+	</view>
+	<view class='row'>
+		<navigator url='/pages/site/site' open-type="navigate">
+			<button size='mini' class='button'>场地</button>
+		</navigator>
+	</view>
+</view>
+<!-- 地图 
+longitude：中心经度
+latitude：中心纬度
+-->
+<map class='map' longitude='121.671964' latitude='31.148267' scale='10' markers='{{markers}}' bindtap="tab" bindmarkertap="markertab"></map>

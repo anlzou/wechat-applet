@@ -1,0 +1,108 @@
+/* .log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+} */
+
+/* 跳动icon */
+
+@keyframes gg-bar {
+  10% {
+    box-shadow: inset 0 -4px 0
+  }
+
+  30% {
+    box-shadow: inset 0 -10px 0
+  }
+
+  60% {
+    box-shadow: inset 0 -6px 0
+  }
+
+  80% {
+    box-shadow: inset 0 -8px 0
+  }
+
+  to {
+    box-shadow: inset 0 -2px 0
+  }
+}
+
+.gg-loadbar-sound,
+.gg-loadbar-sound::after,
+.gg-loadbar-sound::before {
+  display: block;
+  box-sizing: border-box;
+  width: 2px;
+  height: 12px;
+  box-shadow: inset 0 -12px 0;
+  animation: gg-bar 1.3s ease infinite alternate
+}
+
+.gg-loadbar-sound {
+  position: relative;
+  transform: scale(var(--ggs, 1))
+}
+
+.gg-loadbar-sound::after,
+.gg-loadbar-sound::before {
+  content: "";
+  position: absolute;
+  bottom: 0
+}
+
+.gg-loadbar-sound::before {
+  left: -4px;
+  animation-delay: -2.4s
+}
+
+.gg-loadbar-sound::after {
+  right: -4px;
+  animation-delay: -3.7s
+}
+
+.dance {
+  width: 100rpx;
+  height: 100rpx;
+  /* border: 1px solid #ccc; */
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.child-box {
+  display: inline-block;
+  background-color: #ccc;
+}
+
+/* 跳动icon_ */
+
+/* flex布局 */
+.v1 {
+  background-color: maroon;
+  height: 200rpx;
+  flex-grow: 1;
+}
+
+.v2 {
+  background-color: green;
+  height: 200rpx;
+  flex-grow: 1;
+  /* background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602128903217&di=88397f5e203842ae3c4a68fc8195dbfe&imgtype=0&src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D2268908537%2C2815455140%26fm%3D79%26app%3D86%26f%3DJPEG%3Fw%3D1280%26h%3D719); */
+}
+
+.v3 {
+  background-color: orange;
+  height: 200rpx;
+  flex-grow: 1;
+  /*同一行*/
+}
+
+.right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
