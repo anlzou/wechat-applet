@@ -1,0 +1,76 @@
+/**index.wxss**/
+.whitecenter {
+  text-align: center;
+  color: white;
+}
+
+.mycity {
+  margin: 40rpx 0 0 0;
+  font-size: 40rpx;
+}
+
+.weather {
+  margin: 20rpx;
+  font-size: 120rpx;
+  padding: 60rpx 0 0 0;
+}
+
+.details {
+  margin: 20rpx;
+  font-size: 30rpx;
+}
+
+.details view {
+  margin: 0 0 50rpx 0;
+  color: white;
+}
+
+/*  */
+.weather_flex {
+  display: flex;
+  background-color: #555;
+  padding: 20rpx;
+}
+
+.w_row {
+  flex-grow: 1;
+  font-size: 24rpx;
+  text-align: center;
+  color: white;
+}
+
+.w_row text {
+  display: block;
+  padding: 7rpx 0;
+}
+
+.tip_flex {
+  color: white;
+}
+
+.t_row {
+  display: flex;
+  margin: 30rpx;
+  border-bottom: 1rpx solid #555;
+}
+
+.t_left image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.t_right {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10rpx;
+}
+
+.title {
+  font-size: 28rpx;
+  flex-grow: 1;
+}
+
+.content {
+  font-size: 24rpx;
+  flex-grow: 1;
+}

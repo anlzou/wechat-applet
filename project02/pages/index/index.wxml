@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<!-- 城市 -->
+<view class="mycity whitecenter">
+	<picker mode='region' bindchange="bindSelectorChange">
+		<icon type="search" color="#ffffff" size="14" />
+		<text>{{myCity}}</text>
+	</picker>
+</view>
+<!-- 实时温度 -->
+<view class="weather whitecenter">
+	{{realTimeTemperature}}
+	<text style="vertical-align:super; font-size:40rpx; font-weight:bold">℃</text>
+	<!-- <text style="vertical-align:super; font-size:40rpx; font-weight:bold">(实时)</text> -->
+</view>
+
+<view class="details whitecenter">{{myDate}} {{myTemperature}}</view>
+
+<view class="details whitecenter">
+	<view style="display:block; margin:auto;">
+		<image src="{{todayData.dayPictureUrl}}" style="width:80rpx; height:80rpx"></image>
+		<image src="{{todayData.nightPictureUrl}}" style="width:80rpx; height:80rpx"></image>
+	</view>
+	{{myWeatherDesc}} {{myWind}} {{myPm25String}}
+</view>
+
+<!-- 三天日期情况 -->
+<view class='weather_flex'>
+	<view wx:for='{{moreData}}' class='w_row' wx:key="xxx">
+		<text>{{item.date}}</text>
+		<text>{{item.temperature}}</text>
+		<view style="display:block; margin:auto;">
+			<image src="{{item.dayPictureUrl}}" style="width:40rpx; height:40rpx"></image>
+			<image src="{{item.nightPictureUrl}}" style="width:40rpx; height:40rpx"></image>
+		</view>
+		<text>{{item.weather}}</text>
+		<text>{{item.wind}}</text>
+	</view>
+</view>
+
+<!-- 五条生活小贴士 -->
+<view class='tip_flex'>
+	<view wx:for='{{tips}}' class='t_row' wx:key="xxx">
+		<view class='t_left'>
+			<image src='/images/w{{index}}.png' mode='widthFix' />
+		</view>
+		<view class='t_right'>
+			<view class='title'>{{item.tipt}} {{item.zs}}</view>
+			<view class='content'>{{item.des}}</view>
+		</view>
+	</view>
+</view>
